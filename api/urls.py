@@ -6,4 +6,5 @@ app_name = 'api'
 urlpatterns = [
     path('', Home_view.as_view(), name='home'),
     path('company/', Company_view.as_view(), name='company'),
+    path('company/<int:id>', Company_view.as_view(), name='company_processor'),
 ]
